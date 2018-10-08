@@ -448,7 +448,7 @@ function _M.geo_lookup(ip)
         ["country_code3"]  = lookup["country"]["iso_code3"],
         ["continent_code"] = lookup["continent"]["code"],
         ["city"]           = lookup["city"]["names"]["en"],
-        ["region"]         = lookup["subdivisions"]["names"]["en"],
+        ["region"]         = lookup["subdivisions"][0]["names"]["en"],
         ["latitude"]       = lookup["location"]["latitude"],
         ["longitude"]      = lookup["location"]["longitude"],
         ["organization"]   = lookup["autonomous_system_number"] .. ' ' .. lookup["autonomous_system_organization"]
