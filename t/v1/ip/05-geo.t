@@ -43,8 +43,6 @@ Content-Type: application/json
     include "../../../conf/v1/ip.conf";
 --- request
 GET /v1/ip/geo/8.8.8.8.json
---- more_headers
-X-IP: 8.8.8.8
 --- no_error_log
 [error]
 --- response_headers
@@ -75,8 +73,6 @@ geoip({"organization_name":"Google LLC","accuracy":1000,"asn":15169,"organizatio
 "$::HttpConfig"
 --- config
     include "../../../conf/v1/ip.conf";
---- more_headers
-X-IP: 8.8.8.8
 --- request
 GET /v1/ip/geo/8.8.8.8.js
 --- no_error_log
@@ -111,8 +107,6 @@ tests({"organization_name":"Google LLC","accuracy":1000,"asn":15169,"organizatio
     include "../../../conf/v1/ip.conf";
 --- request
 GET /v1/ip/geo/8.8.8.8.js?callback=tests
---- more_headers
-X-IP: 8.8.8.8
 --- no_error_log
 [error]
 --- response_headers
@@ -145,8 +139,6 @@ Content-Type: application/javascript
     include "../../../conf/v1/ip.conf";
 --- request
 GET /v1/ip/geo/8.8.8.8.js?callback=<script>
---- more_headers
-X-IP: 8.8.8.8
 --- no_error_log
 [error]
 --- response_headers
