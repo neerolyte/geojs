@@ -132,7 +132,7 @@ Content-Type: application/javascript
 %3Cscript%3E({"organization_name":"Google LLC","accuracy":1000,"asn":15169,"organization":"AS15169 Google LLC","longitude":"-97.822","country_code3":"USA","area_code":"0","ip":"8.8.8.8","country":"United States","continent_code":"NA","country_code":"US","latitude":"37.751"})
 
 
-== TEST 4.b: JS Endpoint sanitise user input specific IP
+=== TEST 4.b: JS Endpoint sanitise user input
 --- http_config eval
 "$::HttpConfig"
 --- config
